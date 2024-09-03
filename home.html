@@ -220,19 +220,10 @@
     </div>
 
     <script>
-        // Function to navigate to the investment details page
-        function navigateToInvestment(amount) {
-            if (!amount || isNaN(amount) || amount < 10) {
-                alert('Please enter a valid investment amount.');
-                return;
-            }
-
-            // Save the selected amount in localStorage
-            localStorage.setItem('investmentAmount', amount);
-
-            // Redirect to the investment details page
-            window.location.href = 'investment-details.html';
-        }
+    function invest(amount) {
+        localStorage.setItem('investmentAmount', amount);
+        window.location.href = 'confirmation.html';
+    }
     </script>
 </body>
 </html>
